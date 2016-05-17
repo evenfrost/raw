@@ -4,7 +4,14 @@
   "description": "Boilerplate without a boiler",
   "main": "server/index.js",
   "scripts": {
-    "start": "babel-node server/index.js"
+    "start": "run dev",
+    "dev": "babel-node server/index.js",
+    "build:server": "babel server -d build/server --minified",
+    "build:client": "babel client -d build/client --minified",
+    "copy": "rsync -aP --exclude='*.js' client/* build/client/",
+    "clean": "rm -rf build",
+    "build": "npm run clean && npm run build:server && npm run build:client && npm run copy",
+    "prod": "NODE_ENV=production node build/server/index.js"
   },
   "engines": {
     "node": ">=6.0.0"

@@ -70,5 +70,5 @@ createServer(async (req, res) => {
     res.write(`${err}\n`);
     res.end();
   }
-}).listen(5000);
+}).listen(process.env.NODE_ENV === 'production' ? 80 : 5000);
 
