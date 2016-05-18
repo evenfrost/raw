@@ -1,7 +1,7 @@
 {
   "name": "raw",
   "version": "0.1.0",
-  "description": "Boilerplate without a boiler",
+  "description": "Raw static server and basic boilerplate for ES6+ apps",
   "main": "server/index.js",
   "scripts": {
     "start": "run dev",
