@@ -1,6 +1,6 @@
 {
   "name": "raw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Raw static server and basic boilerplate for ES6+ apps",
   "main": "server/index.js",
   "scripts": {
