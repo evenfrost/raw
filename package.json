@@ -4,7 +4,7 @@
   "description": "Raw static server and basic boilerplate for ES6+ apps",
   "main": "server/index.js",
   "scripts": {
-    "start": "run dev",
+    "start": "npm run dev",
     "dev": "babel-node server/index.js",
     "build:server": "babel server -d build/server --minified",
     "build:client": "babel client -d build/client --minified",
