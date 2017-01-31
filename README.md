@@ -1,5 +1,5 @@
 ## Note
-See [boot](https://github.com/evenfrost/boot) for more modern config and CLI usage.
+Check [boot](https://github.com/evenfrost/boot) for more modern config and CLI usage.
 
 ## Install
 
