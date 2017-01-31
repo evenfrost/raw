@@ -1,3 +1,6 @@
+## Note
+See [boot](https://github.com/evenfrost/boot) for more modern config and CLI usage.
+
 ## Install
 
 ```bash
