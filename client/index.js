@@ -1,1 +1,1 @@
-document.write('raw');
+document.write('raw server started');

@@ -1,4 +1,13 @@
 {
-  "presets": ["stage-1"],
-  "plugins": ["transform-es2015-modules-commonjs"]
+  "env": {
+    "node": true
+  },
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "stage-1"
+  ]
 }

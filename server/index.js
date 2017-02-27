@@ -10,8 +10,8 @@ const is = {
    * @param  {String}  path The file path.
    * @return {Promise}
    */
-  accessible: path => new Promise(resolve => {
-    access(path, R_OK, err => {
+  accessible: path => new Promise((resolve) => {
+    access(path, R_OK, (err) => {
       resolve(!err);
     });
   }),
@@ -22,7 +22,7 @@ const is = {
    * @param  {String}  path The path of possible directory.
    * @return {Promise}
    */
-  directory: path => new Promise(resolve => {
+  directory: path => new Promise((resolve) => {
     stat(path, (err, stats) => {
       if (err) resolve(false);
 
@@ -70,5 +70,5 @@ createServer(async (req, res) => {
     res.write(`${err}\n`);
     res.end();
   }
-}).listen(process.env.NODE_ENV === 'production' ? 80 : 5000);
+}).listen(process.env.PORT ? process.env.PORT : (process.env.NODE_ENV === 'production' ? 8080 : 5000)); // eslint-disable-line
 

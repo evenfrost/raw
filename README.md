@@ -6,22 +6,21 @@ Check [boot](https://github.com/evenfrost/boot) for more complete Node.js app so
 ```bash
 git clone git@github.com:evenfrost/raw.git
 rm -rf .git
-npm i
+yarn install
 ```
 ## Run
 
-### development
+### Development
 
 ```bash
-npm start
+yarn start # server is now up at http://localhost:5000
 ```
-Server is now up at [http://localhost:5000](http://localhost:5000).
 
-### production
+### Production
 
 ```bash
-npm run build
-npm run prod
+yarn build
+yarn prod # server is now up at http://localhost:8080
 ```
-Server is now up at [http://localhost:80](http://localhost:80).
-
+### Configuration
+Specify different port with `PORT=xxxx`
