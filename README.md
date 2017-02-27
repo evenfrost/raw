@@ -23,4 +23,9 @@ yarn build
 yarn prod # server is now up at http://localhost:8080
 ```
 ### Configuration
-Specify different port with `PORT=xxxx`
+Specify different port with
+```bash
+PORT=xxxx yarn start
+# or
+PORT=xxxx yarn prod
+```
