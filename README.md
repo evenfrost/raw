@@ -1,5 +1,5 @@
 ## Note
-Check [boot](https://github.com/evenfrost/boot) for more modern config and CLI usage.
+Check [boot](https://github.com/evenfrost/boot) for more complete Node.js app solution and CLI usage.
 
 ## Install
 
